@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+  <title>jquery自适应高度插件-html580.com</title>
+	<meta name="keywords" content="fixheight fixheight.js jquery.fixheight.js 自适应高度插件"/>
+  <meta name="description" content="fixheight fixheight.js jquery.fixheight.js 自适应高度插件">
+	<link href="css/bootstrap.css" rel="stylesheet">
+	<link href="css/bootstrap-responsive.css" rel="stylesheet">
+	<link href="css/docs.css" rel="stylesheet">
+	<link href="js/google-code-prettify/prettify.css" rel="stylesheet">
+	<!-- Le HTML5 shim, for IE6-8 support of HTML5 elements -->
+	<!--[if lt IE 9]>
+	  <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+	<![endif]--> <!-- Le fav and touch icons -->
+	<link rel="apple-touch-icon-precomposed" sizes="144x144" href="ico/apple-touch-icon-144-precomposed.png">
+	<link rel="apple-touch-icon-precomposed" sizes="114x114" href="ico/apple-touch-icon-114-precomposed.png">
+	<link rel="apple-touch-icon-precomposed" sizes="72x72" href="ico/apple-touch-icon-72-precomposed.png">
+	<link rel="apple-touch-icon-precomposed" href="ico/apple-touch-icon-57-precomposed.png">
+	<link rel="shortcut icon" href="ico/favicon.png">
+<style>
+/*扩展提示框内的字体样式*/
+.pt {
+	font-family: "微软雅黑","Microsoft Yahei",Arial,Helvetica,sans-serif,"宋体";
+    font-size: 13px;
+	color: #515151;
+}
+.footer{
+	margin-top:0;	
+}
+.header{
+	width:100%;margin:0;height:60px;line-height:60px;	
+	background-color: #F5F5F5;
+  background-image: linear-gradient(to bottom, #d5d5d5, #cccccc);
+  background-repeat: repeat-x;
+  text-align: center;
+}
+body,.container{width:100%;} 
+</style>
+</head>
+<body data-spy="scroll" data-target=".bs-docs-sidebar"   none="true" class="fixheight">
+	<!-- Navbar -->
+	<div class="navbar navbar-inverse navbar-fixed-top" _height="none">
+		<div class="navbar-inner">
+			<div class="container">
+				<button type="button" class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
+					<span class="icon-bar"></span><span class="icon-bar"></span> <span class="icon-bar"></span>
+				</button>
+				<a class="brand" href="index.html">jquery.fixheight.js</a>
+				<div class="nav-collapse collapse">
+					<p class="navbar-text pull-right">
+					  <a href="http://www.html580.com/" target="_blank">Blog on html580</a>
+					</p>
+					<ul class="nav">
+						<li class="active"><a href="example.html">Examples</a></li>
+					</ul>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="container" _height="auto">
+		<div none="true"  class="fixheight"  rid="1" style="width:100%;margin:0;padding:0;">
+	 			<div class="header"  _height="none1">
+	 					Fix Header Height(the first)
+	 		  </div>
+	 		  <div _height="auto1">
+	 		  	<div none="true"  class="fixheight"  rid="2" style="width:100%;margin:0;padding:0;">
+	 		  	  <div class="header"  _height="none2">
+	 					Fix Header Height(the secend)
+			 		  </div>
+			 		  <div _height="auto2" style="font:12px/1.5 tahoma,arial,宋体">
+			 		  	   <p> none="ture"->直接取得实际高度，排除所有CSS的設，如:border、margin、padding等。</p>
+			 		  	   <p> _height="none"->扣除高度。</p>
+			 		  	   <p> _height="auto"->高度100%。</p>
+			 		  	    
+			 		  	   <p> 如果有多个嵌套 增加rid属性值，</p>
+			 		  	   <p> 比加rid=1,对应的_height="none1"或_height="auto1"</p>
+			 		  </div>
+			 		  <div class="footer"  _height="none2">
+			 		  		Fix Footer Height(the secend)
+			 		  </div>
+			 		 </div>
+	 		  </div>
+	 		  <div class="footer"  _height="none1">
+	 		  		Fix Footer Height(the first)
+	 		  </div>
+	  </div>
+	</div>
+	
+	<!-- Footer -->
+	<footer class="footer" _height="none">
+		<div class="container">
+			Designed and build by <a href="https://github.com/html580" target="_blank">@html580</a>
+			<p><a href="http://www.html580.com" target="_blank">Blog on html580</a></p>
+		</div>
+	</footer>				
+	<!-- Placed at the end of the document so the pages load faster -->
+	<script src="js/jquery.js"></script>
+	<script src="js/jquery.ba-resize.js"></script>
+	<script src="js/jquery.fixheight.js"></script>
+	<script type="text/javascript">
+	$(function () {
+	     $(".fixheight").fixheight();
+	});
+</script>
+	</script>
+</body>
+</html>
